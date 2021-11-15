@@ -1,0 +1,69 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+    background-image: linear-gradient(to right, rgb(124, 183, 201) , rgb(111, 142, 207));
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.bg{
+    background-image: linear-gradient(to right, rgb(124, 183, 201) , rgb(111, 142, 207));
+    width: 100%;
+    height: 100%;
+}
+
+.ime{
+    position: absolute;
+    margin-top: 10px;
+    width: 30%;
+    align: center;
+}
+
+.social{
+    position: absolute;
+    background-size: auto;
+    bottom: 5%;
+    left: 5%;
+    align: center;
+}
+
+.soc{
+    display: inline-block;
+    position: relative;
+}
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(129, 129, 129, 0.37);
+    overflow-x: hidden;
+    padding-top: 20px;
+    align-items: center;
+}
+  
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.main {
+     margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+.navigacija {
+    padding: 100% 0;
+}

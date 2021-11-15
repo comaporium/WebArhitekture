@@ -19,19 +19,11 @@ a{
     animation: animate 20s ease-in-out infinite;
     background-size: cover;
 }
-
-
-
 .okvir{
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.2);
-}
-
-
-.izbor:hover{
-    background: rgb(0,0,0,0.3);
 }
 
 .ime{
@@ -44,7 +36,6 @@ a{
     text-align: center;
     line-height: 0.1;
 }
-
 .social{
     position: absolute;
     background-size: auto;
@@ -58,20 +49,32 @@ a{
 .soc{
     margin: 6px;
 }
-.cosak{
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-    background: rgba(0,0,0,0.5);
-}
-.cosak:hover{
-    background: #747474;
-}
 
 .nastavak{
      position: absolute;
       top: 70%;
     left: 38%; 
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url("slike/početna.jpg");
+        transition: 5s all ease;
+    }
+    20%{
+        background-image: url("slike/početna2.jpg");
+        transition: 5s all ease;
+    }
+    40%{
+        background-image: url("slike/početna3.JPG");
+        transition: 5s all ease;
+    }
+    60%{
+        background-image: url("slike/početna4.JPG");
+        transition: 5s all ease;
+    }
+    80%{
+        background-image: url("slike/početna5.JPG");
+        transition: 5s all ease;
+    }
 }
