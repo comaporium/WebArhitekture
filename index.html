@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>BIBERI</title>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+		}
+		a{
+			text-decoration: none;
+			color: white;
+		}
+		
+		#but1  {padding-left: 740px;
+		        padding-top: 440px;
+		}
+		        
+		.slike{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			animation: animate 20s ease-in-out infinite;
+			background-size: cover;
+		}
+		
+		@keyframes animate{
+			0%,100%{
+				background-image: url("početna.jpg");
+				transition: 5s all ease;
+			}
+			20%{
+				background-image: url("početna2.jpg");
+				transition: 5s all ease;
+			}
+			40%{
+				background-image: url("početna3.JPG");
+				transition: 5s all ease;
+			}
+			60%{
+				background-image: url("početna4.JPG");
+				transition: 5s all ease;
+			}
+			80%{
+				background-image: url("početna5.JPG");
+				transition: 5s all ease;
+			}
+		}
+		
+		.okvir{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.2);
+		}
+		
+		
+		.izbor:hover{
+			background: rgb(0,0,0,0.3);
+		}
+		
+		.ime{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			margin-top: 5px;
+			color: white;
+			text-align: center;
+			line-height: 0.1;
+		}
+
+		.social{
+			position: absolute;
+			background-size: auto;
+			bottom: 5px;
+			right: 5px;
+			background: rgba(0,0,0,0.3);
+			padding-top: 5px;
+			padding-left: 5px;
+		}
+	
+		.soc{
+			margin: 6px;
+		}
+		.cosak{
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			cursor: pointer;
+			transition: 0.4s;
+			background: rgba(0,0,0,0.5);
+		}
+		.cosak:hover{
+			background: #747474;
+		}
+		
+		.nastavak{
+ 			position: absolute;
+  			top: 70%;
+			left: 38%; 
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	
+	<div class="slike">
+		<div class="okvir">
+			<div class="social">
+				<span class="soc"><a target= "_blank" href="https://www.facebook.com"><img src="fb(1).png" alt="fb" height="30px" width="30px"></a></span>
+				<span class="soc"><a target= "_blank" href="https://www.instagram.com"><img src="ig(1).png" alt="ig" height="30px" width="30px"></a></span>
+				<span class="soc"><a target= "_blank" href="https://www.google.ba"><img src="google(1).png" alt="google" height="30px" width="30px"></a></span>
+			</div>
+			<div class="ime">
+				<img src="logo.png" alt="logo" width="700" >
+		   </div>
+				
+				
+		    <div id="but1">
+				
+			<a class="nastavak" href="onama.html"><img src="zabiberimoga.png" alt="nastavak" width="300" > </a>	
+				
+		    </div>
+		</div>
+			
+			
+			
+	</div>
+</body>
+</html>
+
