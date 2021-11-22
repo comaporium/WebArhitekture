@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#but1  {padding-left: 740px;
+        padding-top: 440px;
+}
+        
+.slike{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 20s ease-in-out infinite;
+    background-size: cover;
+}
+.okvir{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.2);
+}
+
+.ime{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    line-height: 0.1;
+}
+.social{
+    position: absolute;
+    background-size: auto;
+    bottom: 5px;
+    right: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.soc{
+    margin: 6px;
+}
+
+.nastavak{
+     position: absolute;
+      top: 70%;
+    left: 38%; 
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url("slike/početna.png");
+        transition: 5s all ease;
+    }
+    20%{
+        background-image: url("slike/početna2.png");
+        transition: 5s all ease;
+    }
+    40%{
+        background-image: url("slike/početna3.png");
+        transition: 5s all ease;
+    }
+    60%{
+        background-image: url("slike/početna4.png");
+        transition: 5s all ease;
+    }
+    80%{
+        background-image: url("slike/početna5.png");
+        transition: 5s all ease;
+    }
+}
