@@ -7,6 +7,14 @@
     text-decoration: none;
     font-family: 'MuseoModerno', cursive;
 }
+/*sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
+html{
+  overflow: scroll;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
 
 
 body{
@@ -16,14 +24,14 @@ body{
     
 
 }
-
+/*citav ekran se posmatra kao jedan div klase wrapper*/
 .wrapper{
     
     display: flex;
     position: relative;
 
 }
-
+/*klasa sidebar za navigaciju*/
 .wrapper .sidebar{
     
     position: fixed;
@@ -83,7 +91,7 @@ body{
 .wrapper .sidebar ul li:hover a{
     color:#000000;
 }
-
+/*klasa social za upravljanje socialnim mrezama u dnu navigacije*/
 .wrapper .sidebar .social{
     position: absolute;
     bottom :0;
@@ -120,7 +128,7 @@ body{
     width: 43%;
     padding-top: 30%;
 }
-
+/*klasa main odnosi se na sve desno od navigacije*/
 .wrapper .main{
     width: 100%;
     margin-left: 13%;
@@ -130,7 +138,7 @@ body{
     background-attachment: fixed;
     height: 3600px;
 }
-
+/*info je ostao kao visak, koji mozda iskoristimo*/
 .wrapper .main .info{
     color:#717171;
     padding: 0;
