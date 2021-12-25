@@ -35,8 +35,8 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Studenti.", "Frontend developeri.", "Backend developeri."],
-        typeSpeed: 100,
+        strings: ["Kontaktirajte nas."],
+        typeSpeed: 70,
         backSpeed: 60,
         loop: true
     });
@@ -47,6 +47,7 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -74,25 +75,25 @@ $(document).ready(function(){
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 200) {
-      $('.bottomMenu').fadeIn();
+    if (y > 220) {
+      $('.form').fadeIn();
     } else {
-      $('.bottomMenu').fadeOut();
+      $('.form').fadeOut();
     }
   });
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 1100) {
-      $('.bottomMenu1').fadeIn();
+    if (y > 1080) {
+      $('.lokacija').fadeIn();
     } else {
-      $('.bottomMenu1').fadeOut();
+      $('.lokacija').fadeOut();
     }
   });
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 2000) {
+    if (y > 1800) {
       $('.bottomMenu2').fadeIn();
     } else {
       $('.bottomMenu2').fadeOut();

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'MuseoModerno', cursive;
+}
+/*sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
+html{
+  overflow: scroll;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+.element::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+
+body{
+    background:#ffffff;
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+/*citav ekran se posmatra kao jedan div klase wrapper*/
+.wrapper{
+    
+    display: flex;
+    position: relative;
+
+}
+/*klasa sidebar za navigaciju*/
+.wrapper .sidebar{
+    
+    position: fixed;
+    width: 14%;
+    height: 100%;
+    background:#FF003F;
+    /*#FF003F - pokazat im ovu*/
+    padding:30px 0px;
+    backdrop-filter: blur(2000px);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    border-top-right-radius: 6%;
+    border-bottom-right-radius: 6%;
+
+    
+}
+
+
+.wrapper .sidebar .slika img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom:5%;
+    
+    
+    
+}
+
+.wrapper .sidebar ul {
+    margin-top: 100%;
+}
+.wrapper .sidebar ul li{
+    padding : 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    text-align: center;
+    font-weight: 800;
+}
+
+.wrapper .sidebar ul li a{
+    color:#ffffff;
+    display: block;
+    font-weight: 800;
+}
+
+.wrapper .sidebar ul li a .nav{
+    width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #d8d5d538;
+    backdrop-filter: blur(1500px);
+    opacity: 0.6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper .sidebar ul li:hover a{
+    color:#000000;
+}
+/*klasa social za upravljanje socialnim mrezama u dnu navigacije*/
+.wrapper .sidebar .social{
+    position: absolute;
+    bottom :0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    opacity: 95%;
+    
+
+}
+
+.wrapper .sidebar .social a{
+    display: block;
+    width: 40px;
+    background:rgba(59, 220, 241, 0);
+    backdrop-filter: blur(3000px);
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.wrapper .sidebar .social img{
+    width: 50%;
+    padding-top: 25%;
+   
+    
+}
+
+#link{
+    width: 43%;
+    padding-top: 30%;
+}
+/*klasa main odnosi se na sve desno od navigacije*/
+.wrapper .main{
+    width: 100%;
+    margin-left: 13%;
+    /*display: flex;*/
+    background: url("slike/office555.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 2500px;
+}
+/*info je ostao kao visak, koji mozda iskoristimo*/
+.wrapper .main .info{
+    color:#717171;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* main dio - tekst animacija */
+
+
+.wrapper .main .max-width{
+  /*width: 100%;*/
+  /*display: flex;*/
+  height: max-content;
+}
+.wrapper .main .main-content{
+    margin-left: 3%;
+    margin-top:20%;
+    text-align: center;
+}
+.wrapper .main .max-width .row{
+  margin-right: 0;
+}
+.wrapper .main .main-content .text-1{
+    font-size: 80px;
+    font-weight: 600;
+    color:white;
+}
+.wrapper .main .main-content .text-2{
+    font-size: 65px;
+    margin-left: -3px;
+    font-weight: 600;
+    color:white;
+}
+.wrapper .main .main-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+    font-weight: 600;
+    color:white;
+}
+.wrapper .main .main-content .text-3 span{
+    color: #FF003F;
+    font-weight: bold;
+    font-weight: 600;
+
+}
+
+
+/*MIS*/
+
+.scroll-downs {
+    position: fixed;
+    z-index: 70;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    padding: 10px 0 10px 0;
+    margin-left: 50%;
+  
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #FF003F;
+    border-radius: 25px;
+    opacity: 1;
+    box-sizing: content-box;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: black;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
+  }
+  
+  
+  
+  .scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #FF003F;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .scroll-up-btn:hover{
+    filter: brightness(90%);
+  }
+
+  
+  /*slider projekti*/
+  

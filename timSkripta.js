@@ -35,8 +35,8 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Studenti.", "Frontend developeri.", "Backend developeri."],
-        typeSpeed: 100,
+        strings: ["Upoznajte naš tim."],
+        typeSpeed: 70,
         backSpeed: 60,
         loop: true
     });
@@ -74,16 +74,16 @@ $(document).ready(function(){
 
 $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 200) {
-      $('.bottomMenu').fadeIn();
+    if (y > 120) {
+      $('.tim').fadeIn();
     } else {
-      $('.bottomMenu').fadeOut();
+      $('.tim').fadeOut();
     }
   });
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 1100) {
+    if (y > 960) {
       $('.bottomMenu1').fadeIn();
     } else {
       $('.bottomMenu1').fadeOut();
@@ -92,7 +92,7 @@ $(document).scroll(function() {
 
   $(document).scroll(function() {
     var y = $(this).scrollTop();
-    if (y > 2000) {
+    if (y > 1800) {
       $('.bottomMenu2').fadeIn();
     } else {
       $('.bottomMenu2').fadeOut();
