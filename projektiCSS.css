@@ -295,7 +295,6 @@ body{
     height: 100%;
     width: 100%;
     display: block;
-
 }
 
 /*koristi se za sve projekte*/
@@ -303,14 +302,13 @@ body{
 .bottomMenuSlika img{
     width: 100%;
     height: 100%;
-    opacity: 0.7;
 }
 
 /*koristi se za sve projekte*/
 
 .bottomMenuTekst{
 
-    width: 100%;
+    width: 250%;
     height: 100%;
     padding: 25px 3%;
     display: block;
@@ -334,10 +332,30 @@ body{
     transition: background-color 1s;
 }
 
+.batn:hover{
+    background-color: white;
+    color:#FF003F;
+    
+}
+
+.batn1{
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    padding:1% 2%;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #FF003F;
+    background:#FF003F;
+    color:white;
+    cursor:pointer;
+    border-radius: 25px;
+    transition: background-color 1s;
+}
+
 /*koristi se za sve projekte*/
 
 
-.batn:hover{
+.batn1:hover{
     background-color: white;
     color:#FF003F;
     
@@ -429,6 +447,108 @@ body{
   .scroll-up-btn:hover{
     filter: brightness(90%);
   }
+  /*polje zmije*/
+  canvas {
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.575);
+  }
+  .skrl{
+      color:#FF003F;
+  }
 
-  
   /*slider projekti*/
+.slideshow{
+    width: 690px;
+    height: 490px;
+    overflow: hidden;
+    box-shadow:0 0 20px -10px #000;
+    border-radius: 25px;
+}
+
+.navigacija{
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    left: 28%;
+}
+
+.bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid #FF003F;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 25px;
+}
+
+.bar:hover{
+    background: #FF003F;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slajdovi{
+    width: 500%;
+    height: 100%;
+    display:flex;
+    
+}
+
+.slajd{
+    width: 20%;
+    transition: 0.6s;
+    
+}
+
+
+.slajd img{
+    width: 690px;
+    height: 490px;
+    border-radius: 25px;
+
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+
+#r11:checked ~ .s1{
+    margin-left: 0;
+}
+#r12:checked ~ .s1{
+    margin-left: -20%;
+}
+#r13:checked ~ .s1{
+    margin-left: -40%;
+}
+#r14:checked ~ .s1{
+    margin-left: -60%;
+}
+#r15:checked ~ .s1{
+    margin-left: -80%;
+}
+#r16:checked ~ .s1{
+    margin-left: -100%;
+}
+
+

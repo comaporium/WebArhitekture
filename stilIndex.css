@@ -319,8 +319,8 @@ body{
   position: absolute;
   top:85%;
   font-weight: 800;
-  background-color: white;
   left:5%;
+  color:white;
   
 }
 
@@ -342,7 +342,7 @@ body{
   position: absolute;
   top:85%;
   font-weight: 800;
-  background-color: white;
+  color:white;
   left:54%;
   
 }
@@ -525,7 +525,7 @@ body{
 .wrapper .main .bottomMenu2{
 
   margin-left: 5%;
-  margin-top: 25%;
+  margin-top: 27%;
   margin-right: 5%;
   background-color: rgba(243, 243, 243, 0.747);
   border-radius: 25px;
