@@ -8,8 +8,30 @@ a{
     color: white;
 }
 
-#but1  {padding-left: 740px;
-        padding-top: 440px;
+#but1 {
+    padding-left: 740px;
+    padding-top: 440px;
+}
+
+@keyframes pulse {
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+       -webkit-transform: scale(0.9);
+       transform: scale(0.9);
+    }
+    100% {
+        -webkit-transform: scale(1);
+       transform: scale(1);
+    }
+}
+
+#but1 img{
+    animation: pulse 2s infinite, magnified 2s 1;
+        
 }
         
 .slike{
