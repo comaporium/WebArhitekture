@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,300&display=swap');
+
+body{
+    font-family: 'Mulish', sans-serif;
+    background: linear-gradient(90deg, #ECE9E6, #FFFFFF);
+
+}
+
+.okvir{
+    text-align: center;
+    margin-top: 15%;
+}
+.naslovUOkviru{
+    letter-spacing: 5px;
+}
+
+.inputPolje input{
+   height: 25px;
+   width: 15%;
+   border-radius: 5px;
+   margin-top:1%;
+   border:1px solid black;
+}
+
+input {
+    text-align: center;
+    font-size:17px;
+}
+
+.fade{
+    display:block;
+    padding:0.5% 3%;
+    margin: 2% auto;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #FF003F;
+    background:#FF003F;
+    color:white;
+    cursor:pointer;
+    border-radius: 25px;
+    transition: background-color 1s;
+
+}
+
+.fade:hover{
+    background-color: white;
+    color:#FF003F;
+
+}
+
+#izlaz{
+    font-size: larger;
+}
+
+#opseg{
+    color:#FF003F;
+}

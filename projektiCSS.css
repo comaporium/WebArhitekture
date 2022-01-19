@@ -10,6 +10,7 @@
 /*sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
 html{
   overflow: scroll;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar{
@@ -136,7 +137,7 @@ body{
     background: url("slike/office555.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 3600px;
+    height: 4300px;
 }
 /*info je ostao kao visak, koji mozda iskoristimo*/
 .wrapper .main .info{
@@ -277,7 +278,7 @@ body{
     margin-right: 5%;
     background-color: rgba(243, 243, 243, 0.747);
     border-radius: 25px;
-    height: 15.5%;
+    height: 13%;
     width: 91%;
     display: flex;
     position: relative;
@@ -370,7 +371,7 @@ body{
     margin-right: 5%;
     background-color: rgba(243, 243, 243, 0.747);
     border-radius: 25px;
-    height: 15.5%;
+    height: 13%;
     width: 91%;
     display: flex;
     position: relative;
@@ -530,6 +531,20 @@ input[name="r"]{
 #r5:checked ~ .s1{
     margin-left: -80%;
 }
+
+#r21:checked ~ .s1{
+    margin-left: 0;
+}
+#r22:checked ~ .s1{
+    margin-left: -20%;
+}
+#r23:checked ~ .s1{
+    margin-left: -40%;
+}
+#r24:checked ~ .s1{
+    margin-left: -60%;
+}
+
 
 
 #r11:checked ~ .s1{
