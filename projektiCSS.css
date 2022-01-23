@@ -136,7 +136,7 @@ body{
     width: 100%;
     margin-left: 13%;
     /*display: flex;*/
-    background: url("slike/office555.png") no-repeat center;
+    background: url("slike/prog.png") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     height: 4300px;
@@ -470,6 +470,7 @@ body{
   }
 
   /*Slider slika za projekte*/
+  /*div u kojem je smjestena slika*/
 .slideshow{
     width: 690px;
     height: 490px;

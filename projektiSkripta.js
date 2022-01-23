@@ -51,8 +51,7 @@ $(document).scroll(function () {
   }
 });
 
-
-//zmijuga loma
+//zmija
 
 $(document).ready(function () {
   var canvas = document.getElementById('game');
