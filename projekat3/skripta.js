@@ -1,5 +1,13 @@
-function provjeri() {
+//Da onclick metoda radi na enter taster
+$(document).ready(function (){
+    $("#adresa").keypress(function(event){
+        if(event.keyCode === 13){
+        $("#btn").click();
+     }
+    })
+}); 
 
+function provjeri() {
     let adresa = document.getElementById("adresa").value;
     let dijelovi = adresa.split(".");
     let numerickiDijelovi = [];
@@ -10,6 +18,10 @@ function provjeri() {
     let opseg3 = "192.168.0.0 - 192.168.255.255";
 
     //Ako adresa ima vise od 15 karaktera neispravna je
+
+    if(adresa.length == 0){
+        document.getElementById("izlaz").innerHTML = "Unijeli ste prazno polje, ponovite unos.";
+    }
 
     if (adresa.length > 15) {
         document.getElementById("izlaz").innerHTML = "Unijeli ste neispravnu IP adresu.";
