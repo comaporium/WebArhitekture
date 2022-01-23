@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROVJERI IP ADRESU</title>
     <link rel="stylesheet" href="stil.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="skripta.js"></script>
 </head>
 
 <body>
@@ -17,11 +15,14 @@
         <div class="naslovUOkviru">
             <h2>Unesite IP adresu koju želite provjeriti</h2>
         </div>
-        <div class="inputPolje"><input id="adresa"></div>
+        <div class="inputPolje"><input id="adresa" required></div>
         <button onclick="provjeri()" class="fade" id="btn">PROVJERI</button>
-        <p id="izlaz"><span id="ispis"> </span><span id="opseg"></span></p>
+        <p id="izlaz"><span id="opseg"></span></p>
     </div>
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="skripta.js"></script>
 
 </html>
