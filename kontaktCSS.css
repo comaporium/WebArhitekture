@@ -1,4 +1,6 @@
+/*Import fonta sa googla koji cemo koristiti na citavoj stranici*/
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+/*Ukidanje svih predefinisanih postavki*/
 *{
     margin: 0;
     padding: 0; 
@@ -7,7 +9,7 @@
     text-decoration: none;
     font-family: 'MuseoModerno', cursive;
 }
-/*sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
+/*Sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
 html{
   overflow: scroll;
 }
@@ -16,7 +18,7 @@ html{
   display:none;
 }
 
-
+/*Kako bi stranica isla do kraja*/
 body{
     background:#ffffff;
     margin: 0%;
@@ -24,21 +26,20 @@ body{
     
 
 }
-/*citav ekran se posmatra kao jedan div klase wrapper*/
+/*Citav ekran se posmatra kao jedan div klase wrapper*/
 .wrapper{
     
     display: flex;
     position: relative;
 
 }
-/*klasa sidebar za navigaciju*/
+/*Klasa sidebar za navigaciju, sve sa lijeve strane*/
 .wrapper .sidebar{
     
     position: fixed;
     width: 14%;
     height: 100%;
     background:#FF003F;
-    /*#FF003F - pokazat im ovu*/
     padding:30px 0px;
     backdrop-filter: blur(2000px);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -48,7 +49,7 @@ body{
     
 }
 
-
+/*Sidebar logo*/
 .wrapper .sidebar .slika img{
     display: block;
     margin-left: auto;
@@ -60,6 +61,7 @@ body{
     
 }
 
+/*Navigacija*/
 .wrapper .sidebar ul {
     margin-top: 100%;
 }
@@ -91,7 +93,8 @@ body{
 .wrapper .sidebar ul li:hover a{
     color:#000000;
 }
-/*klasa social za upravljanje socialnim mrezama u dnu navigacije*/
+
+/*Klasa social za upravljanje socialnim mrezama u dnu navigacije*/
 .wrapper .sidebar .social{
     position: absolute;
     bottom :0;
@@ -123,12 +126,12 @@ body{
    
     
 }
-
+/*Ikona linkedina je pravila malo problema zbog velicine, trebala je svoja podesavanja*/
 #link{
     width: 43%;
     padding-top: 30%;
 }
-/*klasa main odnosi se na sve desno od navigacije*/
+/*klasa Main odnosi se na sve desno od navigacije - sekcija*/
 .wrapper .main{
     width: 100%;
     margin-left: 13%;
@@ -139,11 +142,8 @@ body{
     height: 2400px;
 }
 
-/*tekst iznad kartica*/
-
+/*Tekst iznad forme*/
 .wrapper .main .max-width{
-    /*width: 100%;*/
-    /*display: flex;*/
     height: max-content;
 }
   
@@ -180,7 +180,7 @@ body{
   
 }
 
-  /*forma*/
+  /*Forma*/
 
 .form{
     width:45%;
@@ -230,7 +230,7 @@ p:before{
     font-size:14px;
     color:#5a5a5a;
 }
-
+/*button posalji*/
 .fade{
     display:block;
     padding:2% 8%;
@@ -250,14 +250,6 @@ p:before{
     color:#FF003F;
     
 }
-
-.fade:focus, .fade:active{
-    background-color: black;
-    transition: none;
-}
-
-
-
 /*adresa*/
 
 .wrapper .main .lokacija{
@@ -321,14 +313,7 @@ p:before{
     border: 0;
 }
 
-
-
-
-
-
   /*  MIŠ */
-
-
 .scroll-downs {
     position: fixed;
     z-index: 70;
@@ -363,9 +348,7 @@ p:before{
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
   }
-  
-  
-  
+/*Povratak na vrh button*/
   .scroll-up-btn{
     position: fixed;
     height: 45px;

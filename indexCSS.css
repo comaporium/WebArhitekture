@@ -3,16 +3,19 @@ body{
     padding: 0;
     font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
 }
+
 a{
     text-decoration: none;
     color: white;
 }
 
+/*Zabiberimo ga slika koja vodi na stranicu*/
 #but1 {
     padding-left: 740px;
     padding-top: 440px;
 }
 
+/*keyframe koji omogucava da zabiberimo ga pulsira*/
 @keyframes pulse {
 
     0% {
@@ -29,11 +32,13 @@ a{
     }
 }
 
+/*pozivanje keyframea na slici*/
 #but1 img{
     animation: pulse 2s infinite, magnified 2s 1;
         
 }
-        
+
+/*Pozadina koja se mijenja*/
 .slike{
     position: absolute;
     width: 100%;
@@ -41,6 +46,8 @@ a{
     animation: animate 20s ease-in-out infinite;
     background-size: cover;
 }
+
+/*Vezano za ikone socijalnih mreza*/
 .okvir{
     position: absolute;
     width: 100%;
@@ -48,6 +55,7 @@ a{
     background: rgba(0,0,0,0.2);
 }
 
+/*Logo biberi na sredini*/
 .ime{
     position: absolute;
     top: 50%;
@@ -58,6 +66,7 @@ a{
     text-align: center;
     line-height: 0.1;
 }
+/*Vezano za ikone socijalnih mreza*/
 .social{
     position: absolute;
     background-size: auto;
@@ -66,17 +75,18 @@ a{
     padding-top: 5px;
     padding-left: 5px;
 }
-
+/*Vezano za ikone socijalnih mreza*/
 .soc{
     margin: 6px;
 }
-
+/*Zabiberimo ga logo*/
 .nastavak{
-     position: absolute;
-      top: 70%;
+    position: absolute;
+    top: 70%;
     left: 38%; 
 }
 
+/*Keyframe vezan za izmjenu pozadina*/
 @keyframes animate{
     0%,100%{
         background-image: url("slike/početna.png");

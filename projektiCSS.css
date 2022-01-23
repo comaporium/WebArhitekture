@@ -1,4 +1,6 @@
+/*Import fonta sa googla koji cemo koristiti na citavoj stranici*/
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap');
+/*Ukidanje svih predefinisanih postavki*/
 *{
     margin: 0;
     padding: 0; 
@@ -7,7 +9,7 @@
     text-decoration: none;
     font-family: 'MuseoModerno', cursive;
 }
-/*sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
+/*Sakrivanje skrola sa strane, ali zadrzavanje funkcionalnosti skrola*/
 html{
   overflow: scroll;
   scroll-behavior: smooth;
@@ -17,7 +19,7 @@ html{
   display:none;
 }
 
-
+/*Kako bi stranica isla do kraja*/
 body{
     background:#ffffff;
     margin: 0%;
@@ -25,21 +27,20 @@ body{
     
 
 }
-/*citav ekran se posmatra kao jedan div klase wrapper*/
+/*Citav ekran se posmatra kao jedan div klase wrapper*/
 .wrapper{
     
     display: flex;
     position: relative;
 
 }
-/*klasa sidebar za navigaciju*/
+/*Klasa sidebar za navigaciju, sve sa lijeve strane*/
 .wrapper .sidebar{
     
     position: fixed;
     width: 14%;
     height: 100%;
     background:#FF003F;
-    /*#FF003F - pokazat im ovu*/
     padding:30px 0px;
     backdrop-filter: blur(2000px);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
@@ -49,7 +50,7 @@ body{
     
 }
 
-
+/*Sidebar logo*/
 .wrapper .sidebar .slika img{
     display: block;
     margin-left: auto;
@@ -61,6 +62,7 @@ body{
     
 }
 
+/*Navigacija*/
 .wrapper .sidebar ul {
     margin-top: 100%;
 }
@@ -92,7 +94,7 @@ body{
 .wrapper .sidebar ul li:hover a{
     color:#000000;
 }
-/*klasa social za upravljanje socialnim mrezama u dnu navigacije*/
+/*Klasa social za upravljanje socialnim mrezama u dnu navigacije*/
 .wrapper .sidebar .social{
     position: absolute;
     bottom :0;
@@ -124,12 +126,12 @@ body{
    
     
 }
-
+/*Ikona linkedina je pravila malo problema zbog velicine, trebala je svoja podesavanja*/
 #link{
     width: 43%;
     padding-top: 30%;
 }
-/*klasa main odnosi se na sve desno od navigacije*/
+/*klasa Main odnosi se na sve desno od navigacije - sekcija*/
 .wrapper .main{
     width: 100%;
     margin-left: 13%;
@@ -139,20 +141,9 @@ body{
     background-attachment: fixed;
     height: 4300px;
 }
-/*info je ostao kao visak, koji mozda iskoristimo*/
-.wrapper .main .info{
-    color:#717171;
-    padding: 0;
-    margin: 0;
 
-}
-
-/* main dio - tekst animacija */
-
-
+/* Main sekcija - tekst animacija */
 .wrapper .main .max-width{
-  /*width: 100%;*/
-  /*display: flex;*/
   height: max-content;
 }
 .wrapper .main .main-content{
@@ -187,8 +178,7 @@ body{
 
 }
 
-/*upoznajte nas*/
-
+/*Projekti govore hiljadu rijeci ispis*/
 #wrapper {
     margin-left: auto;
     margin-right: auto;
@@ -213,16 +203,14 @@ body{
     line-height: 1;
     color:white;
 }
-
+/*Kad se predje misem preko ispisa*/
 #wrapper p:hover{
     animation-play-state: paused;
     color:#FF003F;
     transition: 2s;
 }
 
-
-
-
+/*Animacija skakanja slova*/
 @keyframes text-shadow {
     0% {
         transform: translateY(0);
@@ -269,8 +257,7 @@ body{
 }
 
 
-/*projekt 1 div*/
-
+/*projekt 1 div - sticky*/
 .wrapper .main .bottomMenu{
 
     margin-left: 5%;
@@ -288,9 +275,7 @@ body{
 
 }
 
-/*koristi se za sve projekte*/
-
-
+/*koristi se za sve projekte za pozicioniranje slika*/
 .bottomMenuSlika{
 
     height: 100%;
@@ -298,15 +283,13 @@ body{
     display: block;
 }
 
-/*koristi se za sve projekte*/
-
+/*koristi se za sve projekte za pozicioniranje slika*/
 .bottomMenuSlika img{
     width: 100%;
     height: 100%;
 }
 
-/*koristi se za sve projekte*/
-
+/*koristi se za sve projekte za pozicioniranje teksta*/
 .bottomMenuTekst{
 
     width: 250%;
@@ -318,7 +301,6 @@ body{
 }
 
 /*koristi se za sve projekte*/
-
 .batn{
     position: absolute;
     bottom: 5%;
@@ -338,7 +320,7 @@ body{
     color:#FF003F;
     
 }
-
+/*Drugi batn gdje imamo dva buttona za git i za isprobaj*/
 .batn1{
     position: absolute;
     bottom: 5%;
@@ -352,19 +334,50 @@ body{
     border-radius: 25px;
     transition: background-color 1s;
 }
-
-/*koristi se za sve projekte*/
-
-
 .batn1:hover{
     background-color: white;
     color:#FF003F;
     
 }
 
-/*projekat 2 div*/
-
+/*projekat 2 div - subnetiranje*/
 .wrapper .main .bottomMenu1{
+
+    margin-left: 5%;
+    margin-top: 25%;
+    margin-right: 5%;
+    background-color: rgba(243, 243, 243, 0.747);
+    border-radius: 25px;
+    height: 13%;
+    width: 91%;
+    display: flex;
+    position: relative;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  
+}
+
+
+/*projekat 3 div - javne i privatne*/
+.wrapper .main .bottomMenu2{
+
+    margin-left: 5%;
+    margin-top: 25%;
+    margin-right: 5%;
+    background-color: rgba(243, 243, 243, 0.747);
+    border-radius: 25px;
+    height: 13%;
+    width: 91%;
+    display: flex;
+    position: relative;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  
+}
+/*projekat 4 div - zmija*/
+.wrapper .main .bottomMenu3{
 
     margin-left: 5%;
     margin-top: 25%;
@@ -418,9 +431,7 @@ body{
     10% { transform: translateY(0); opacity: 1; }
     100% { transform: translateY(15px); opacity: 0;}
   }
-  
-  
-  
+/*Povratak na vrh button*/
   .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -448,16 +459,17 @@ body{
   .scroll-up-btn:hover{
     filter: brightness(90%);
   }
-  /*polje zmije*/
+  /*Polje zmije*/
   canvas {
     border: 1px solid rgba(255, 255, 255, 0.37);
     background-color: rgba(255, 255, 255, 0.575);
   }
+  /*Score*/
   .skrl{
       color:#FF003F;
   }
 
-  /*slider projekti*/
+  /*Slider slika za projekte*/
 .slideshow{
     width: 690px;
     height: 490px;
@@ -515,7 +527,7 @@ input[name="r"]{
     border-radius: 25px;
 
 }
-
+/*Da bi slajder radio za projekat 1*/
 #r1:checked ~ .s1{
     margin-left: 0;
 }
@@ -532,6 +544,7 @@ input[name="r"]{
     margin-left: -80%;
 }
 
+/*Da bi slajder radio za projekat 3*/
 #r21:checked ~ .s1{
     margin-left: 0;
 }
@@ -544,9 +557,7 @@ input[name="r"]{
 #r24:checked ~ .s1{
     margin-left: -60%;
 }
-
-
-
+/*Da bi slajder radio za projekat 2*/
 #r11:checked ~ .s1{
     margin-left: 0;
 }
